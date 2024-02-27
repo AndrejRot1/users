@@ -11,7 +11,17 @@ export const handler: Handlers = {
 
     console.log("q:", q);
 
-    // if q is not null then return all books that contain q in their title or authors
+    // if q is not null then return all books that contain q in their title or authors, use this code to open file const books = await Deno.readTextFile("./static/books.json");
+    // if q is not null then return all books that contain q in their title or authors, use this code to open file const books = await Deno.readTextFile("./static/books.json");
+    if(q){
+      const books = await Deno.readTextFile("./static/books.json");
+      const data = JSON.parse(books);
+      const filteredData = data.filter((book: any) => {
+        return book.title.includes(q) || book.authors.join(", ").includes(q);
+      });
+      return await ctx.render(filteredData);
+    }
+    
 
     
 
