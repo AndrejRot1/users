@@ -11,7 +11,7 @@ import * as $posts from "./routes/posts.tsx";
 import * as $read_books from "./routes/read_books.tsx";
 import * as $test from "./routes/test.tsx";
 import * as $thanks_for_subscribing from "./routes/thanks-for-subscribing.tsx";
-import * as $Counter from "./islands/Counter.tsx";
+
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -26,9 +26,7 @@ const manifest = {
     "./routes/test.tsx": $test,
     "./routes/thanks-for-subscribing.tsx": $thanks_for_subscribing,
   },
-  islands: {
-    "./islands/Counter.tsx": $Counter,
-  },
+  islands: {},
   baseUrl: import.meta.url,
 } satisfies Manifest;
 
