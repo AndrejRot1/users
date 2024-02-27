@@ -1,0 +1,28 @@
+[
+    {
+        "title": "The Art of Python",
+        "authors": ["John Doe", "Jane Smith"],
+        "year": 2020
+    },
+    {
+        "title": "Professional Ajax",
+        "authors": ["Nicholas C. Zakas", "Jeremy McPeak", "Joe Fawcett"],
+        "edition": 2,
+        "year": 2008
+    },
+    {
+        "title": "Learning JavaScript Design Patterns",
+        "authors": ["Addy Osmani", "Stoyan Stefanov"],
+        "year": 2012
+    },
+    {
+        "title": "Eloquent JavaScript",
+        "authors": ["Marijn Haverbeke"],
+        "year": 2011
+    },
+    {
+        "title": "Pro JavaScript Techniques",
+        "authors": ["John Resig"],
+        "year": 2007
+    }
+]
